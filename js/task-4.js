@@ -1,8 +1,9 @@
+// виправлена вартість доставки
 function getShippingCost(country) {
     let price;
     switch (country) {
         case "China":
-            price = 170;
+            price = 100;
             break;
         case "Chile":
             price = 250;

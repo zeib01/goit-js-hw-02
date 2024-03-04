@@ -1,15 +1,21 @@
+// старий варіант рішення задачи
+// function checkForSpam(message) {
+//     const verifiedMessage = message.toLowerCase();
+//     if (verifiedMessage.includes("spam")) {
+//         return true;
+//     }
+//     else if (verifiedMessage.includes("sale")) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+// покращений варіант 
 function checkForSpam(message) {
     const verifiedMessage = message.toLowerCase();
-    console.log(verifiedMessage);
-    if (verifiedMessage.includes("spam")) {
-        return true;
-    }
-    else if (verifiedMessage.includes("sale")) {
-        return true;
-    }
-    else {
-        return false;
-    }
+    return verifiedMessage.includes("spam") || verifiedMessage.includes("sale");
 }
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
